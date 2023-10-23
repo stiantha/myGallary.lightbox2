@@ -1,0 +1,57 @@
+/*Css*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background: #000000;
+}
+
+.container {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #252525;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
